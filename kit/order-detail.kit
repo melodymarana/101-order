@@ -1,0 +1,235 @@
+<!-- @include _head.kit -->
+<!-- @include _navbar.kit" -->
+<main class="main-content">
+    <section class="section section-checkout">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="checkout-title mt-3 mb-3">
+                        Order status
+                    </div>
+                    <ul class="status-timeline mt-5">
+                        <li class="step step-paid-waiting active">
+                            <div class="step-wrap">
+                                <div class="step-icon"><i class="far fa-hand-holding-usd icon"></i></div>
+                                <div class="step-content">
+                                    <div class="step-title">รอชำระเงิน</div>
+                                </div>
+                            </div>  
+                        </li>
+                        <li class="step step-paid-success">
+                            <div class="step-wrap">
+                                <div class="step-icon"><i class="far fa-hands-usd icon"></i></div>
+                                <div class="step-content">
+                                    <div class="step-title">ชำระเงินสำเร็จ</div>
+                                </div>
+                            </div>  
+                        </li>
+                        <li class="step step-paid-confirmed">
+                            <div class="step-wrap">
+                                <div class="step-icon"><i class="far fa-clipboard-check icon"></i></div>
+                                <div class="step-content">
+                                    <div class="step-title">ยืนยันคำสั่งซื้อ</div>
+                                </div>
+                            </div>  
+                        </li>
+                        <li class="step step-preparing">
+                            <div class="step-wrap">
+                                <div class="step-icon"><i class="far fa-tasks icon"></i></div>
+                                <div class="step-content">
+                                    <div class="step-title">จัดเตรียมสินค้า</div>
+                                </div>
+                            </div>                
+                        </li> 
+                        <li class="step step-delivering">             
+                            <div class="step-wrap">
+                                <div class="step-icon"><i class="far fa-hand-holding-box icon"></i></div>
+                                <div class="step-content">
+                                    <div class="step-title">กำลังจัดส่ง</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="status-cancled text-center text-danger mt-5">
+                       <h5><i class="far fa-times-circle icon"></i> ยกเลิกออเดอร์</h5>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="checkout-wrap checkout-order-receipt">
+                <div class="d-md-flex justify-content-center">
+                    <div class="box-wrap mt-3">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="order-detail">
+                                    <div class="order-number-wrap">
+                                        <span class="text-medium">Order no.: </span>
+                                        <span class="order-number">#456123</span>
+                                    </div>
+                                    <div class="order-placed">
+                                        <span class="text-medium">Placed order: </span>
+                                        <span class="order-time">12.00</span>
+                                        <span class="order-date">29/10/2019</span>
+                                    </div>
+                                    <div class="order-delivery d-none">
+                                        <span class="text-medium">Delivery: </span>
+                                        <span class="order-time">12.30</span> 
+                                        <span class="order-date">29/10/2019</span>
+                                    </div>
+                                    <div class="order-delivery-place">
+                                        <span class="text-medium">Delivery to: </span>
+                                        <div class="address-wrap">
+                                            <div class="address-name">
+                                                True Digital Park, Floor 10
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <div class="checkout-order checkout-order-summary">
+                                    <div class="order-list">
+                                        <div class="order-item">
+                                            <div class="restaurant-name mb-1">
+                                                Otoya restaurant
+                                            </div>
+                                            <div class="order-item-list">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="order-image">
+                                                                <img src="https://via.placeholder.com/500x375" alt="" class="img-fluid">
+                                                        </div>              
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="order-detail">
+                                                            <div class="order-name text-medium text-primary mb-1">Akauo Karaage with Pontsu Sauce</div>
+                                                            <div class="content-wrap">
+                                                                <div class="order-amount justify-content-start">
+                                                                    <span class="label-amount text-gray font-italic">x1</span>
+                                                                </div>
+                                                                <div class="order-price-wrap">
+                                                                    <div class="order-price text-medium">฿ 419</div>
+                                                                </div>
+                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="order-item-list">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="order-image">
+                                                                <img src="https://via.placeholder.com/500x375" alt="" class="img-fluid">
+                                                        </div>              
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="order-detail">
+                                                            <div class="order-name text-medium text-primary mb-1">Akauo Karaage with Pontsu Sauce</div>
+                                                            <div class="content-wrap">
+                                                                <div class="order-amount justify-content-start">
+                                                                    <span class="label-amount text-gray font-italic">x1</span>
+                                                                </div>
+                                                                <div class="order-price-wrap">
+                                                                    <div class="order-price text-medium">฿ 419</div>
+                                                                </div>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-item">
+                                            <div class="restaurant-name mb-1">
+                                                Ippudo
+                                            </div>
+                                            <div class="order-item-list">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="order-image">
+                                                                <img src="https://via.placeholder.com/500x375" alt="" class="img-fluid">
+                                                        </div>              
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="order-detail">
+                                                            <div class="order-name text-medium text-primary mb-1">Akauo Karaage with Pontsu Sauce</div>
+                                                            <div class="content-wrap">
+                                                                <div class="order-amount justify-content-start">
+                                                                    <span class="label-amount text-gray font-italic">x1</span>
+                                                                </div>
+                                                                <div class="order-price-wrap">
+                                                                    <div class="order-price text-medium">฿ 419</div>
+                                                                </div>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-summary mt-1 mb-1">
+                                        <div class="coupon-code d-none">
+                                            <div class="row">
+                                                <div class="col-12 col-md-8">   
+                                                        <div class="input-group">
+                                                                <span class="text text-primary mr-3">Coupon code</span>
+                                                                <input type="text" class="form-control" placeholder="Enter your code here">
+                                                        </div> 
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="sub-total">
+                                                        <p class="text-primary text-medium mb-0 mr-5">Sub total</p>
+                                                        <span class="text-medium">฿ 1,137</span>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sub-total row-wrap">
+                                            <div class="text-wrap">
+                                                <p class="text-medium text-uppercase">Sub total</p>
+                                            </div>
+                                            <div class="text-wrap text-right">
+                                                <p class="discount-price text-medium"> ฿114</p>
+                                            </div>
+                                        </div>
+                                        <div class="code-discount row-wrap">
+                                            <div class="text-wrap">
+                                                <p class="text-medium text-uppercase">Promo Discount (10%)</p>
+                                            </div>
+                                            <div class="text-wrap text-right">
+                                                <p class="discount-price text-medium text-danger">- ฿114</p>
+                                            </div>
+                                        </div>
+                                        <div class="delivery-charge row-wrap">
+                                            <div class="text-wrap">
+                                                <p class="text-medium text-uppercase">Delivery Charge</p>
+                                            </div>
+                                            <div class="text-wrap text-right">
+                                                <p class="text-green text-medium">Free</p>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="box-footer">
+                                <div class="order-summary">
+                                    <div class="total row-wrap">
+                                        <div class="text-wrap">
+                                            <p class="total-label text-medium text-uppercase text-white">Total</p>
+                                        </div>
+                                        <div class="text-wrap text-right">
+                                            <p class="total-price text-medium text-uppercase text-white mb-0">฿ 1,023</p>
+                                            <p class="text-white mb-0">Total (Includes  VAT)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- @include _main-footer.kit -->
+<!-- @include _footer.kit -->

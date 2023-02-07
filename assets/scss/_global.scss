@@ -1,0 +1,627 @@
+body,
+.app /*fix wrong layout when use in laravel and vue*/ {
+  color: $content;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  @extend %font-style;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+  font-weight: 400;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  &:hover,
+  &:focus,
+  &.active {
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.container,
+.container-fluid {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.container {
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 991px){
+  .container {
+    max-width: 100%;
+  }
+}
+
+.row {
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+[class*='col-'],
+.col {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  //border: 1px solid red;
+}
+
+%font-style {
+  font-family: $font-primary;
+  font-weight: normal;
+  //letter-spacing: 0.5px;
+}
+
+%dropdown-shadow {
+  box-shadow: 0 3px 6px 0 rgba(black, 0.15);
+}
+
+%dropdown-style {
+  background: white;
+  border-color: transparent;
+  border-radius: 0 0 5px 5px;
+  border-top: 2px solid #0abaee;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: 0 3px 6px 0 rgba(black, 0.15);
+  margin-top: 0;
+}
+
+%dropdown-with-arrow {
+  margin-top: 0.6rem;
+  border-radius: $border-rounded;
+  left: auto;
+  right: 0;
+  border-color: #ddd;
+
+  &::before {
+    content: ' ';
+    display: table;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-bottom-color: white;
+    border-right-color: white;
+    position: absolute;
+    right: 20px;
+    top: -6px;
+    transform: rotate(45deg);
+  }
+
+  @extend %dropdown-shadow;
+}
+
+%toggle-down {
+  &::after {
+    content: '\f078';
+    //color: $light-content;
+    font-family: $font-awesome;
+    font-weight: normal;
+    font-size: 0.625rem;
+    margin-left: 0.25rem;
+    color: $secondary;
+  }
+}
+
+%scrollbar-style {
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $primary;
+    padding: 5px;
+  }
+}
+
+%line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+%line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.border-rounded {
+  border-radius: $border-rounded;
+  overflow: hidden;
+}
+
+//badge
+.badge {
+  padding: 0.375rem 0.5rem;
+  color: white;
+  font-weight: normal;
+  font-size: $font-xs;
+  word-break: break-word;
+  white-space: unset;
+
+  @media (min-width: 768px) {
+    //flex: 1;
+  }
+
+  &-completed,
+  &-outline-green {
+    color: #4cd964;
+    background-color: transparent;
+    border: 1px solid #4cd964;
+  }
+
+  &-cancled,
+  &-outline-red {
+    color: #ed0000;
+    background-color: transparent;
+    border: 1px solid #ed0000;
+  }
+
+  &-online-delivery {
+    background: #00bfa5;
+  }
+
+  &-in-store, &-orange {
+    background: #fe8c01;
+  }
+}
+
+//Button
+.btn {
+  letter-spacing: 0.031rem;
+
+  &.disabled {
+    cursor: not-allowed;
+    border-color: #e9eff1 !important;
+    background-color: #e9eff1 !important;
+    color: $light-content !important;
+  }
+
+  &-primary {
+    background-color: $primary;
+    border-color: $primary;
+
+    &:hover,
+    &:focus,
+    &.active {
+      background-color: lighten($primary, 10%);
+      border-color: lighten($primary, 10%);
+    }
+  }
+
+  &-secondary {
+    background: transparent;
+    border: 2px solid $secondary;
+    color: $secondary;
+
+    &:hover,
+    &:focus,
+    &.active {
+      background: $secondary;
+      border-color: $secondary;
+      color: white;
+    }
+  }
+
+  &-outline {
+    &-primary {
+      @include btn-outline($primary, $primary);
+    }
+
+    &-secondary {
+      @include btn-outline($secondary, $secondary);
+    }
+
+    &-custom {
+      @include btn-outline($primary, $secondary);
+    }
+
+    &-default {
+      @include btn-outline($light-skyblue, $primary);
+      &:hover,
+      &:focus {
+        color: $primary;
+        border-color: $primary;
+        background-color: white;
+      }
+    }
+  }
+
+  //custom button
+  &-style {
+    padding: 0.7rem;
+    display: block;
+    width: 100%;
+    border-radius: 1.5rem;
+    font-size: $font-sm;
+  }
+
+  &-custom {
+    padding: 0.5rem 1.3rem;
+    display: block;
+    border-radius: 1.5rem;
+    font-size: $font-sm;
+    min-width: 7rem;
+  }
+
+  &-add-new {
+    @include flex-style(center, center);
+
+    border: 2px dashed #e7f2fd;
+    border-radius: $border-rounded;
+    text-transform: uppercase;
+    color: $primary;
+    padding: 1rem;
+    font-size: 0.875rem;
+
+    .icon-wrap {
+      font-size: 0.75rem;
+      margin-right: 0.5rem;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $light-blue;
+      border-color: $secondary;
+    }
+  }
+}
+
+.text {
+  &-default {
+    color: $content;
+  }
+
+  &-black {
+    color: $dark;
+  }
+
+  &-gray {
+    color: $placeholder;
+  }
+
+  &-skyblue {
+    color: $secondary;
+  }
+
+  &-primary {
+    color: $primary !important;
+  }
+
+  &-green {
+    color: #2dcd7a;
+  }
+
+  &-red {
+    color: #ed0000;
+  }
+
+  &-medium {
+    font-family: $font-primary;
+    font-weight: 400;
+  }
+
+  &-underline {
+    text-decoration: underline;
+  }
+
+  &-required {
+    &::after {
+      content: '*';
+      color: #ed0000;
+    }
+  }
+
+  &-title {
+    color: $secondary;
+    font-size: $font-lg;
+    font-weight: 400;
+    //@include font-style($font-primary, normal, 1.125rem);
+  }
+
+  &-description {
+    color: $content;
+    font-size: $font-sm;
+  }
+
+  &-hvr {
+    &-primary {
+      color: $primary;
+
+      &:hover,
+      &:focus,
+      &.active {
+        color: $secondary;
+      }
+    }
+
+    &-secondary {
+      color: $secondary;
+
+      &:hover,
+      &:focus,
+      &.active {
+        color: $primary;
+      }
+    }
+  }
+
+  &-weight-light {
+    font-weight: 300;
+  }
+}
+
+.slick {
+  &-arrow {
+    &::before {
+      font-family: $font-awesome;
+      color: $primary;
+      font-weight: 900;
+      font-size: 20px;
+    }
+  }
+  &-prev {
+    &::before {
+      content: '\f137';
+    }
+  }
+  &-next {
+    &::before {
+      content: '\f138';
+    }
+  }
+}
+
+.slick-dots {
+  li {
+    margin: 0;
+
+    button::before {
+      content: ' ';
+      width: 0.938rem;
+      height: 0.375rem;
+      background-color: $light-gray;
+      border-radius: 0.063rem;
+      opacity: 1;
+    }
+
+    &.slick-active {
+      button::before {
+        background-color: $secondary;
+      }
+    }
+  }
+}
+
+.slick-slide {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-pills {
+  margin-bottom: 1.5rem;
+
+  .nav-item {
+    flex: 1;
+    text-align: center;
+
+    .nav-link {
+      font-size: $font-xl;
+      font-weight: 400;
+      color: $light-content;
+      transition: all 0.3s ease-in-out;
+
+      &::after {
+        content: ' ';
+        display: block;
+        margin: auto;
+        height: 0.125rem;
+        background: $secondary;
+        width: 1.125rem;
+        margin-top: 0.313rem;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover,
+      &:focus,
+      &.active {
+        background: transparent;
+        color: $primary;
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.alert {
+  color: white;
+  border-radius: 0;
+  border: 0;
+
+  &-danger {
+    background-color: #ed0000;
+  }
+
+  &-success {
+    background-color: #4cd964;
+  }
+
+  &-orange {
+    background-color: #f28121;
+  }
+}
+
+//Back to top
+#backToTop {
+  @include flex-style(center, center);
+
+  background: $secondary;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  text-align: center;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  font-size: 0.875rem;
+  cursor: pointer;
+
+  .text-top {
+    font-size: 0.75rem;
+
+    &::before {
+      content: '\f077';
+      font-family: 'Font Awesome 5 Pro', Helvetica, sans-serif;
+      color: white;
+      display: block;
+      font-size: 1.125rem;
+      line-height: 1;
+    }
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+input[type='checkbox'] {
+  &:not(:checked),
+  &:checked {
+    position: absolute;
+    left: -9999px;
+
+    & + label {
+      position: relative;
+      padding-left: 1.85rem;
+      cursor: pointer;
+
+      &::after {
+        content: '\f00c';
+        position: absolute;
+        font-family: 'Font Awesome 5 Pro', Helvetica, sans-serif;
+        top: 0;
+        left: 0;
+        width: 1.25rem;
+        height: 1.25rem;
+        font-size: 0.625rem;
+        border: 0.125rem solid $secondary;
+        border-radius: 0.313rem;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &:checked + label::after {
+    opacity: 1;
+    background: $secondary;
+  }
+}
+
+//input disable arrows
+input[type='number'] {
+  -moz-appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+.dropdown-toggle {
+  &::after {
+    border: 0;
+    vertical-align: middle;
+
+    @extend %toggle-down;
+  }
+}
+
+.dropdown {
+  .dropdown-item {
+    font-size: 0.875rem;
+
+    &:hover,
+    &:focus,
+    &.active {
+      color: $primary;
+      background: transparent;
+    }
+  }
+}
+
+.icon-success {
+  font-size: 5rem;
+  color: #7ed321;
+}
+
+.no-margin-bottom {
+  margin-bottom: -1rem;
+}
+
+.pagination {
+  .page-link {
+    @include flex-style(center, center);
+
+    color: $light-content;
+    border: 0;
+    background-color: transparent;
+    border-radius: 50% !important;
+    font-weight: 400;
+    font-size: $font-sm;
+    width: 26px;
+    height: 26px;
+    margin: 0 0.125rem;
+
+    .icon {
+      font-size: $font-xs;
+      font-weight: 900;
+    }
+  }
+
+  .page-item {
+    &:hover,
+    &:focus,
+    &.active {
+      .page-link {
+        background-color: transparent;
+        color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+%transition {
+    transition: all .3s ease-in-out;
+}
+
+%zoom-in {
+    transform: scale(1.2, 1.2);
+}
+
+@keyframes slide-to-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-to-right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0) !important;
+    }
+}

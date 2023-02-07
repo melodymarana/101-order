@@ -1,0 +1,41 @@
+<!-- @include _head.kit -->
+<!-- @include "components/navbar-no-search.kit" -->
+<main class="main-content">
+        <section class="section section-checkout">
+          <div class="container">
+              <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <ul class="checkout-step">            
+                            <li class="step step-mycart active">
+                                <div class="step-wrap">
+                                    <div class="step-icon"><span class="icon icon-ico-basket"> </span></div>
+                                    <div class="step-title">My cart</div>
+                                </div>                
+                            </li> 
+                            <li class="step step-summary">                      
+                                <div class="step-wrap">
+                                    <div class="step-icon"><span class="icon icon-ico-summary"></span></div>
+                                    <div class="step-title">Summary</div>
+                                </div>
+                            </li>
+                            <li class="step step-confirmation">             
+                                <div class="step-wrap">
+                                    <div class="step-icon"><span class="icon icon-ico-check"></span></div>
+                                    <div class="step-title">Confirmation</div>
+                                </div>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>   
+                <div class="checkout-title mt-3 mb-3">
+                    Your Order <!--<span class="amount">(3)</span>-->
+                </div>
+                <div class="checkout-order">
+                     <!-- @include "components/order-empty.kit" -->
+                </div>
+          </div>
+        </section>
+    </main>
+    <!-- @include _modal.kit -->
+    <!-- @include _main-footer.kit -->
+    <!-- @include _footer.kit -->

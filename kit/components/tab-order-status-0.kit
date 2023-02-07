@@ -1,0 +1,135 @@
+<div class="content-wrap">
+    <div class="title">Order status</div>
+
+    <div class="order-status">
+        <div class="order-status-wrap order-status-title">
+            <div class="item"><div class="item-title">Order Id</div></div>
+            <div class="item"><div class="item-title">Date</div></div> 
+            <div class="item"><div class="item-title">Total</div></div>
+            <div class="item status"><div class="item-title">Status</div></div>
+            <div class="item toggle"><div class="item-title"> </div></div>
+        </div>
+
+        <div class="accordion" id="order-status-list">
+            <div class="card">
+              <div class="card-header" id="order-1">
+                <div class="order-status-wrap order-status-item">
+                    <div class="item-wrap">
+                        <div class="item">
+                            <span class="label">Order Id: </span>
+                            <span class="order-id">#456123</span>
+                        </div>
+                        <div class="item">
+                            <span class="label">Date: </span> 
+                            <span class="date-time">30/12/2019 11:50</span>
+                        </div> 
+                        <div class="item">
+                            <span class="label">Total: </span>
+                            <span class="total-price text-medium">฿ 1,023.00</span>
+                        </div>
+                        <div class="item status">
+                            <span class="label">Status: </span> 
+                            <span class="badge badge-primary rounded-pill">Confirmed</span>
+                        </div>
+                    </div>
+                
+                    <div class="item toggle">
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapse-order-1" aria-expanded="true" aria-controls="collapse-order-1">
+                             <i class="fas fa-chevron-down icon"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+          
+              <div id="collapse-order-1" class="collapse show" aria-labelledby="order-1" data-parent="#order-status-list">
+                <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="text-dark text-center text-medium">Order Items (3)</div>
+                            <div class="order-delivery-place text-dark text-center">
+                                Delivery to: <span class="address-name">True Digital Park, Floor 10</span>
+                             </div>
+                        
+                           <!-- @include checkout-order-summary.kit -->
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="order-2">
+                    <div class="order-status-wrap order-status-item">
+                        <div class="item-wrap">
+                            <div class="item">
+                                <span class="label">Order Id: </span>
+                                <span class="order-id">#456123</span>
+                            </div>
+                            <div class="item">
+                                <span class="label">Date: </span> 
+                                <span class="date-time">30/12/2019 11:50</span>
+                            </div> 
+                            <div class="item">
+                                <span class="label">Total: </span>
+                                <span class="total-price text-medium">฿ 1,023.00</span>
+                            </div>
+                            <div class="item status">
+                                <span class="label">Status: </span> 
+                                <span class="badge badge-warning rounded-pill">Preparing</span>
+                            </div>
+                        </div>
+                    
+                        <div class="item toggle">
+                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapse-order-2" aria-expanded="true" aria-controls="collapse-order-1">
+                                    <i class="fas fa-chevron-down icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="collapse-order-2" class="collapse" aria-labelledby="order-2" data-parent="#order-status-list">
+                    <div class="card-body">
+                   
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="order-3">
+                    <div class="order-status-wrap order-status-item">
+                        <div class="item-wrap">
+                            <div class="item">
+                                <span class="label">Order Id: </span>
+                                <span class="order-id">#456123</span>
+                            </div>
+                            <div class="item">
+                                <span class="label">Date: </span> 
+                                <span class="date-time">30/12/2019 11:50</span>
+                            </div> 
+                            <div class="item">
+                                <span class="label">Total: </span>
+                                <span class="total-price text-medium">฿ 1,023.00</span>
+                            </div>
+                            <div class="item status">
+                                <span class="label">Status: </span> 
+                                <span class="badge badge-success rounded-pill">Delivery</span>
+                            </div>
+                        </div>
+                    
+                        <div class="item toggle">
+                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapse-order-3" aria-expanded="true" aria-controls="collapse-order-3">
+                                    <i class="fas fa-chevron-down icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="collapse-order-3" class="collapse" aria-labelledby="order-3" data-parent="#order-status-list">
+                    <div class="card-body">
+                    
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        
+    </div>
+</div>

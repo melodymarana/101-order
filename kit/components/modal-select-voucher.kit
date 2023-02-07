@@ -1,0 +1,36 @@
+<div class="modal fade" id="modal-select-voucher" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content modal-vouchers">
+      <div class="modal-body">
+        <div class="content-head">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fal fa-times icon"></i></span>
+          </button>
+        </div>
+        <div class="content-title">
+          <div class="head-title-underline">Select Vouchers</div>
+        </div>
+        <div class="content">
+          <div class="no-voucher">no voucher</div>
+          <div class="usable-vouchers">
+            <div class="title-wrap"><span class="title">เลือกใช้ได้ครั้งละ 1 ส่วนลด</span></div>
+            <div class="my-vouchers-lists">
+              <!-- @include voucher-active.kit -->
+              <!-- @include voucher.kit -->
+              <!-- @include voucher.kit -->
+            </div>
+          </div>
+       
+          <div class="unusable-vouchers">
+            <div class="title-wrap"><span class="title">ส่วนลดที่ไม่สามารถใช้ได้</span></div>
+            <div class="my-vouchers-lists">
+              <!-- @include voucher-disabled.kit -->
+              <!-- @include voucher-disabled.kit -->
+              <!-- @include voucher-disabled.kit -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

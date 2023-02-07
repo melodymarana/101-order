@@ -1,0 +1,132 @@
+<!-- @include _head.kit -->
+<!-- @include "components/navbar-no-search.kit" -->
+
+<main class="main-content">
+    <section class="section section-checkout">
+      <div class="container">
+          <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <ul class="checkout-step">            
+                        <li class="step step-mycart active">
+                            <div class="step-wrap">
+                                <div class="step-icon"><span class="icon icon-ico-basket"> </span></div>
+                                <div class="step-title">My cart</div>
+                            </div>                
+                        </li> 
+                        <li class="step step-summary active">                      
+                            <div class="step-wrap">
+                                <div class="step-icon"><span class="icon icon-ico-summary"></span></div>
+                                <div class="step-title">Summary</div>
+                            </div>
+                        </li>
+                        <li class="step step-confirmation">             
+                            <div class="step-wrap">
+                                <div class="step-icon"><span class="icon icon-ico-check"></span></div>
+                                <div class="step-title">Confirmation</div>
+                            </div>
+                        </li>
+                    </ul> 
+                </div>
+            </div>   
+            <div class="checkout-title mt-3 mb-3">
+                    Info & Payment
+            </div>
+            <div class="checkout-wrap">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-lg-5">
+                        <div class="checkout-info">
+                            <div class="box">
+                                <div class="box-header">
+                                    <div class="title">Customer Info</div>
+                                    <div class="edit"><a href="#">Edit</a></div>
+                                </div>
+                                <div class="box-body">
+                                    <div class="customer-info">
+                                        <div class="customer-name">Walunluk K.</div>
+                                        <div class="customer-email">example_mail@mail.com</div>
+                                        <div class="customer-phone">099-123-4567</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-header">
+                                    <div class="title">Delivery to</div>
+                                    <div class="edit"><a href="#">Edit</a></div>
+                                </div>
+                                <div class="box-body">
+                                    <ul class="customer-address">
+                                        <li class="item">
+                                            <a href="#" class="item-address">
+                                                <div class="address-wrap">
+                                                    <div class="address-name">
+                                                        True Digital Park
+                                                    </div>
+                                                    <div class="address-detail">
+                                                        <div class="address-1">
+                                                            Floor 10
+                                                        </div>
+                                                        <div class="address-2">
+                                                            101 Sukhumvit Road, Bangkok 10260
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="address-default">
+                                                    <span class="icon-check"><i class="far fa-check"></i></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="add-new-address">
+                                        <a href="#" class="btn btn-add-new"><span class="icon-wrap text-skyblue"><i class="far fa-plus"></i></span> new address</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <div class="checkout-payment">
+                            <div class="box">
+                                <div class="box-header">
+                                    <div class="title">
+                                        Payment Method
+                                        <div class="payment-logo">
+                                            <img src="../assets/img/101-delivery/payment-logo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="edit"><a href="#">Edit</a></div>
+                                </div>
+                                <div class="box-body">
+                                    <ul class="payment-cards">
+                                        <li class="item active">
+                                            <a href="#" class="card-item">
+                                                <span class="card-image"><img src="../assets/img/101-delivery/checkout/visa-logo.png" alt=""></span>
+                                                <span class="card-number">**** **** **** 0314</span>
+                                                <span class="icon-check"><i class="far fa-check"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="card-item">
+                                                <span class="card-image"><img src="../assets/img/101-delivery/checkout/mastercard-logo.png" alt=""></span>
+                                                <span class="card-number">**** **** **** 0314</span>
+                                                <span class="icon-check"><i class="far fa-check"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="add-new-card">
+                                        <a href="#" class="btn btn-add-new"><span class="icon-wrap text-skyblue"><i class="far fa-plus"></i></span> new address</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-btn justify-content-center mt-3 mb-3">
+                <a href="#" class="btn btn-style btn-primary btn-next text-uppercase">Next</a>
+            </div>
+      </div>
+    </section>
+</main>
+
+<!-- @include _main-footer.kit -->
+<!-- @include _footer.kit -->

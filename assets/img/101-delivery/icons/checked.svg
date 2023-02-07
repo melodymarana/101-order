@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="89" height="89" viewBox="0 0 89 89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #7ed321;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        fill: #7ed321;
+      }
+    </style>
+  </defs>
+  <g id="Component_19_1" data-name="Component 19 – 1" transform="translate(2 2)">
+    <path id="Path" class="cls-1" d="M42.5,0A42.5,42.5,0,1,0,85,42.5,42.5,42.5,0,0,0,42.5,0Z"/>
+    <path id="Path-2" data-name="Path" class="cls-2" d="M44.947,5.972,18.234,32.418a3.557,3.557,0,0,1-5,0L1.036,20.339a3.469,3.469,0,0,1,0-4.946,3.555,3.555,0,0,1,5,0L15.736,25,39.951,1.026a3.555,3.555,0,0,1,5,0A3.469,3.469,0,0,1,44.947,5.972Z" transform="translate(20.901 26.262)"/>
+  </g>
+</svg>

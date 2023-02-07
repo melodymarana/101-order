@@ -1,0 +1,240 @@
+::placeholder {
+  font-size: $font-sm;
+  font-weight: 300;
+  color: $light-content;
+}
+
+.custom-select {
+  font-size: 0.875rem;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid $form-border;
+  box-shadow: none;
+  outline: none !important;
+  background: url('../img/101-delivery/icons/arrow-down-blue.svg') no-repeat
+    right 0.75rem center/10px 10px;
+
+  &:hover,
+  &:focus {
+    border-color: $dark;
+  }
+}
+
+.form {
+  font-size: 0.875rem;
+
+  textarea {
+    border: 0.063rem solid $form-border !important;
+
+    &:hover,
+    &:focus,
+    &.active {
+      box-shadow: none;
+      border-color: $dark !important;
+    }
+  }
+
+  &-label {
+    font-size: $font-xs;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  &-check {
+    padding-left: 0;
+  }
+
+  .form-control {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 0.063rem solid $form-border;
+    font-size: $font-sm;
+    font-weight: 300;
+
+    &:hover,
+    &:focus,
+    &.active {
+      outline: none;
+      box-shadow: none;
+      border-color: $dark;
+    }
+
+    &:disabled {
+      background: transparent;
+      border-color: $form-border;
+    }
+
+    &.is-valid,
+    &.is-invalid {
+      padding-left: calc(1.5em + 0.75rem);
+      background-position: center left calc(0.375em + 0.1875rem);
+    }
+
+    &.is-valid {
+      border-color: $form-border !important;
+    }
+
+    &.is-invalid {
+      border-color: red !important;
+      padding-left: 0.5rem;
+      background: none;
+    }
+  }
+
+  .forgot-password {
+    color: $primary;
+    text-decoration: underline;
+  }
+
+  .btn {
+    margin: 2rem 0;
+  }
+
+  .btn-resend-otp {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    z-index: 9;
+    color: $placeholder;
+    text-decoration: none;
+  }
+
+  .text-otp-detail {
+    font-size: 0.75rem;
+    color: $dark;
+  }
+}
+
+.form-control {
+  &:disabled,
+  &[readonly] {
+    background-color: transparent !important;
+  }
+}
+
+.form-row {
+  margin-left: -1rem;
+  margin-right: -1rem;
+
+  [class*='col-'],
+  .col {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.form-password {
+  .input-group {
+    position: relative;
+
+    .toggle-password {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 9;
+    }
+
+    .toggle-opacity {
+      opacity: 0.4;
+    }
+
+    .form-control {
+      padding-right: 35px;
+      font-size: $font-md;
+    }
+  }
+}
+
+.action-button {
+  margin-top: 2rem;
+
+  .form-group .btn,
+  .btn {
+    margin: 0 0 1rem 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    &-cancle {
+      @media (min-width: 768px) {
+        width: auto;
+        min-width: 150px;
+      }
+    }
+  }
+}
+
+.custom-radio {
+  .label {
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .custom-control-label::before {
+    border: 2px solid #d5d5d5;
+    width: 22px;
+    height: 22px;
+  }
+
+  .custom-control-input:checked {
+    ~ .custom-control-label {
+      &::before {
+        background-color: white;
+        border-color: #d5d5d5;
+      }
+      &::after {
+        content: ' ';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $primary;
+        top: 10px;
+        left: -18px;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .custom-control-input:disabled {
+      &:checked ~ .custom-control-label::before {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.form-member {
+  .form-wrap {
+    @include flex-box(row wrap, space-between, initial, initial);
+  }
+
+  .login-options {
+    margin: 1.5rem 0;
+
+    .nav {
+      &-item {
+        flex: 1;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.form-settings {
+  .form-control {
+    color: $primary;
+  }
+
+  .gender {
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,66 @@
+<!-- @include _head.kit -->
+<!-- @include _navbar.kit -->
+<main class="main-content">
+  <section class="section section-setting">
+    <div class="container">
+      <div class="section-title">
+        <div class="title">Account Settings</div>
+      </div>
+      <div class="d-md-flex">
+        <div class="sidebar">
+          <div class="sidebar-wrap">
+            <div class="dropdown">
+              <button type="button" class="btn dropdown-toggle" id="select-settings-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My profile
+              </button>
+              <div class="dropdown-menu" aria-labelledby="select-settings-menu">
+                <div class="list-group">
+                  <a class="list-group-item list-group-item-action d-none" id="list-overview" data-toggle="list" href="#tab-overview" role="tab" aria-controls="overview">Overview</a>
+                  <a class="list-group-item list-group-item-action active" id="list-my-profile" data-toggle="list" href="#tab-my-profile" role="tab" aria-controls="my-profile">Customer Details</a>
+                  <a class="list-group-item list-group-item-action" id="list-reward-points" data-toggle="list" href="#tab-reward-points" role="tab" aria-controls="reward-points">101 Reward Points</a>
+                  <a class="list-group-item list-group-item-action" id="list-delivery-address" data-toggle="list" href="#tab-delivery-address" role="tab" aria-controls="delivery-address">Delivery address</a>
+                  <a class="list-group-item list-group-item-action" id="list-order-status" data-toggle="list" href="#tab-order-status" role="tab" aria-controls="order-status">Order status</a>
+                  <a class="list-group-item list-group-item-action" id="list-order-history" data-toggle="list" href="#tab-order-history" role="tab" aria-controls="order-history">Order history</a>
+                  <a class="list-group-item list-group-item-action" id="list-voucher-privilege" data-toggle="list" href="#tab-voucher-privilege" role="tab" aria-controls="voucher-privilege">My Vouchers</a>
+                  <a class="list-group-item list-group-item-action" id="list-my-favourites" data-toggle="list" href="#tab-my-favourites" role="tab" aria-controls="my-favourites">My Favorites</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-side">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade d-none" id="tab-overview" role="tabpanel" aria-labelledby="list-overview">
+              <!-- @include components/tab-overview.kit -->
+            </div>
+            <div class="tab-pane fade show active" id="tab-my-profile" role="tabpanel" aria-labelledby="list-my-profile">
+              <!-- @include components/tab-my-profile.kit -->
+            </div>
+            <div class="tab-pane fade" id="tab-reward-points" role="tabpanel" aria-labelledby="list-reward-points">
+              <!-- @include components/tab-reward-points.kit -->
+            </div>
+            <div class="tab-pane fade" id="tab-delivery-address" role="tabpanel" aria-labelledby="list-delivery-address">
+              <!-- @include components/tab-delivery-address.kit -->
+            </div>
+            <div class="tab-pane fade" id="tab-order-status" role="tabpanel" aria-labelledby="list-order-status">
+              <!-- @include components/tab-order-status.kit -->
+            </div>
+            <div class="tab-pane fade" id="tab-order-history" role="tabpanel" aria-labelledby="list-order-history">
+              <!-- @include components/tab-order-history.kit -->
+            </div>
+            <div class="tab-pane fade" id="tab-voucher-privilege" role="tabpanel" aria-labelledby="list-voucher-privilege">
+              <!-- @include components/tab-my-voucher.kit -->
+            </div>
+            <div class="tab-pane fade" id="tab-my-favourites" role="tabpanel" aria-labelledby="list-my-favourites">
+              <!-- @include components/tab-my-favourites.kit -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- @include components/modal-qrcode.kit -->
+<!-- @include components/modal-points-info.kit -->
+<!-- @include _main-footer.kit -->
+<!-- @include _footer.kit -->

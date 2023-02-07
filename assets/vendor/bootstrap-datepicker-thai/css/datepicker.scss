@@ -1,0 +1,508 @@
+//custom datepicker
+
+$primary: #2c317a;
+$secondary: #0abaee;
+$element-hover: #c1c1c1;
+$disabled-color: #999999;
+$day-width: 35px;
+$day-height: 35px;
+$day-bg: #eeeeee;
+$old-bg: #999999;
+$new-bg: #999999;
+$today-bg: #fde19a;
+$selected-bg: #9e9e9e;
+$selected-hover-bg: #808080;
+
+.datepicker {
+    padding: 4px;
+    border-radius: 4px;
+    direction: ltr;
+
+    > div {
+        display: none;
+    }
+
+    table {
+        margin: 0;
+        tr {
+            td.day {
+                &:hover {
+                    background: #eeeeee;
+                    cursor: pointer;
+                }
+            }
+            td.old {
+                color: #999999;
+            }
+            td.new {
+                color: #999999;
+            }
+            td.disabled {
+                background: none;
+                color: #999999;
+                cursor: default;
+
+                &:hover {
+                    background: none;
+                    color: #999999;
+                    cursor: default;
+                }
+            }
+  
+            td.today {
+                background-color: $today-bg;
+                color: #000;
+                &:hover {
+                    background-color: $today-bg;
+
+                    &:hover {
+                        background-color: #fdf59a;
+                        color: #000;
+                    }
+                    &:active {
+                        background-color: #fdf59a;
+                    }
+                }
+
+                &:active,
+                &:hover.active,
+                &:hover.disabled,
+                &:hover[disabled] {
+                    background-color: #fdf59a;
+                }
+            }
+            td.today.disabled {
+                background-color: $today-bg;
+                color: #000;
+                &:hover {
+                    background-color: $today-bg;
+                    color: #000;
+                    background-color: #fdf59a;
+                    &:hover,
+                    &:active {
+                        background-color: #fdf59a;
+                    }
+                }
+                &:active,
+                &:hover.active,
+                &:hover.disabled,
+                &:hover[disabled] {
+                    background-color: #fdf59a;
+                }
+            }
+            td.today.active {
+                background-color: #fdf59a;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+            td.today.disabled.active,
+            td.today.disabled.disabled,
+            td.today[disabled],
+            td.today.disabled[disabled] {
+                background-color: #fdf59a;
+            }
+            td.range {
+                background: #eeeeee;
+                border-radius: 0;
+                &:hover {
+                    background: #eeeeee;
+                    border-radius: 0;
+                }
+            }
+            td.range.disabled {
+                background: #eeeeee;
+                border-radius: 0;
+                &:hover {
+                    background: #eeeeee;
+                    border-radius: 0;
+                }
+            }
+            td.range.today {
+                background-color: #f3d17a;
+                border-radius: 0;
+                &:hover {
+                    background-color: #f3d17a;
+                    border-radius: 0;
+                    &:hover,
+                    &:active {
+                        background-color: #f3e97a;
+                    }
+                }
+                &:active,
+                &:hover.active,
+                &:hover.disabled,
+                &:hover[disabled] {
+                    background-color: #f3e97a;
+                }
+            }
+            td.range.today.disabled {
+                background-color: #f3d17a;
+                border-radius: 0;
+                &:hover {
+                    background-color: #f3d17a;
+                    border-radius: 0;
+                    &:hover,
+                    &:active {
+                        background-color: #f3e97a;
+                    }
+                }
+                &:active,
+                &:hover.active,
+                &:hover.disabled,
+                &:hover[disabled] {
+                    background-color: #f3e97a;
+                }
+            }
+            td.range.today.active,
+            td.range.today.disabled.active,
+            td.range.today.disabled.disabled,
+            td.range.today[disabled],
+            td.range.today.disabled[disabled] {
+                background-color: #f3e97a;
+            }
+  
+            td.selected {
+                background-color: $selected-bg;
+                color: #fff;
+                text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+                &:hover {
+                    background-color: $selected-bg;
+                    color: #fff;
+                    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+                    &:hover,
+                    &:active {
+                        background-color: $selected-hover-bg;
+                    }
+                }
+                &:active,
+                &:hover.active,
+                &:hover.disabled,
+                &:hover[disabled] {
+                    background-color: $selected-hover-bg;
+                }
+            }
+            td.selected.disabled {
+                background-color: $selected-bg;
+                color: #fff;
+                text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+                &:hover {
+                    background-color: $selected-bg;
+                    color: #fff;
+                    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+                    &:hover,
+                    &:active {
+                        background-color: $selected-hover-bg;
+                    }
+                }
+                &:active,
+                &:hover.active,
+                &:hover.disabled,
+                &:hover[disabled] {
+                    background-color: $selected-hover-bg;
+                }
+            }
+            td.selected.active,
+            td.selected.disabled.active,
+            td.selected.disabled.disabled,
+            td.selected[disabled],
+            td.selected.disabled[disabled] {
+                background-color: $selected-hover-bg;
+            }
+            td.active {
+                background-color: #006dcc;
+                color: #fff;
+                text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+                &:hover {
+                    background-color: #006dcc;
+                    color: #fff;
+                    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+                    &:hover,
+                    &:active {
+                        background-color: $primary;
+                    }
+                }
+                &:active,
+                &:hover.active,
+                &:hover.disabled,
+                &:hover[disabled] {
+                    background-color: $primary;
+                }
+            }
+            td.active.disabled {
+                background-color: #006dcc;
+                color: #fff;
+                text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+                &:hover {
+                    background-color: #006dcc;
+                    color: #fff;
+                    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+                    &:hover,
+                    &:active {
+                        background-color: $primary;
+                    }
+                }
+                &:active,
+                &:hover.active,
+                &:hover.disabled,
+                &:hover[disabled] {
+                    background-color: $primary;
+                }
+            }
+            td.active.activ,
+            td.active.disabled.active,
+            td.active.disabled.disabled,
+            td.active[disabled],
+            td.active.disabled[disabled] {
+                background-color: $primary;
+            }
+            td {
+                span {
+                    display: block;
+                    width: 23%;
+                    height: 54px;
+                    line-height: 54px;
+                    float: left;
+                    margin: 1%;
+                    cursor: pointer;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    border-radius: 4px;
+                    &:hover {
+                        background: #eeeeee;
+                    }
+                }
+                span.disabled {
+                    background: none;
+                    color: #999999;
+                    cursor: default;
+                    &:hover {
+                        background: none;
+                        color: #999999;
+                        cursor: default;
+                    }
+                }
+                span.active {
+                    background-color: #006dcc;
+                    color: #fff;
+                    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+                    &:hover {
+                        background-color: #006dcc;
+                        color: #fff;
+                        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+                        &:hover,
+                        &:active {
+                            background-color: $primary;
+                        }
+                    }
+                    &:active,
+                    &:hover.active,
+                    &:hover.disabled,
+                    &:hover[disabled] {
+                        background-color: $primary;
+                    }
+                }
+                span.active.disabled {
+                    background-color: #006dcc;
+                    color: #fff;
+                    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+                    &:hover {
+                        background-color: #006dcc;
+                        color: #fff;
+                        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+                        &:hover,
+                        &:active {
+                            background-color: $primary;
+                        }
+                    }
+                    &:active,
+                    &:hover.active,
+                    &:hover.disabled,
+                    &:hover[disabled] {
+                        background-color: $primary;
+                    }
+                }
+                span.active.active,
+                span.active.disabled.active,
+                span.active.disabled.disabled,
+                span.active[disabled],
+                span.active.disabled[disabled] {
+                    background-color: $primary;
+                }
+                span.old,
+                span.new {
+                    color: #999999;
+                }
+            }
+        }
+    }
+    td {
+        text-align: center;
+        width: $day-width;
+        height: $day-height;
+        border-radius: 4px;
+        border: none;
+    }
+    th {
+        text-align: center;
+        width: $day-width;
+        height: $day-height;
+        border-radius: 4px;
+        border: none;
+    }
+    th.datepicker-switch {
+        width: 145px;
+    }
+    thead {
+        tr {
+            &:first-child {
+                th {
+                    cursor: pointer;
+                    &:hover {
+                        background: #eeeeee;
+                    }
+                }
+                th.cw {
+                    cursor: default;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    tfoot {
+        tr {
+            th {
+                cursor: pointer;
+                &:hover {
+                    background: #eeeeee;
+                }
+            }
+        }
+    }
+    .cw {
+        font-size: 10px;
+        width: 12px;
+        padding: 0 2px 0 5px;
+        vertical-align: middle;
+    }
+}
+.datepicker-inline {
+    width: 220px;
+}
+.datepicker.datepicker-rtl {
+    direction: rtl;
+    table {
+        tr {
+            td {
+                span {
+                    float: right;
+                }
+            }
+        }
+    }
+}
+.datepicker-dropdown {
+    top: 0;
+    left: 0;
+    &:before {
+        content: '';
+        display: inline-block;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #ccc;
+        border-bottom-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: -7px;
+        left: 6px;
+    }
+    &:after {
+        content: '';
+        display: inline-block;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #ffffff;
+        position: absolute;
+        top: -6px;
+        left: 7px;
+    }
+}
+.datepicker.days {
+    div.datepicker-days {
+        display: block;
+    }
+}
+.datepicker.months {
+    div.datepicker-months {
+        display: block;
+    }
+}
+.datepicker.years {
+    div.datepicker-years {
+        display: block;
+    }
+}
+.table-striped {
+    .datepicker {
+        table {
+            tr {
+                td {
+                    background-color: transparent;
+                }
+                th {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+.input-append.date {
+    .add-on {
+        i {
+            display: block;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+.input-prepend.date {
+    .add-on {
+        i {
+            display: block;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+.input-daterange {
+    input {
+        text-align: center;
+        &:first-child {
+            border-radius: 3px 0 0 3px;
+        }
+        &:last-child {
+            border-radius: 0 3px 3px 0;
+        }
+    }
+    .add-on {
+        display: inline-block;
+        width: auto;
+        min-width: 16px;
+        height: 18px;
+        padding: 4px 5px;
+        font-weight: normal;
+        line-height: 18px;
+        text-align: center;
+        text-shadow: 0 1px 0 #ffffff;
+        vertical-align: middle;
+        background-color: #eeeeee;
+        border: 1px solid #ccc;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+}

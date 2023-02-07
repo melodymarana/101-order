@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta content="telephone=no" name="format-detection">
+  <title>101 The Third Place</title>
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts -->
+  <link href="../assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="../assets/vendor/font/gotham/font.css" rel="stylesheet" />
+  <link href="../assets/vendor/font/DBhelvetica/font.css" rel="stylesheet" />
+  <link href="../assets/vendor/font/icomoon/style.css" rel="stylesheet" />
+  <!-- Slick -->
+  <link href="../assets/vendor/slick/slick.css" rel="stylesheet">
+  <link href="../assets/vendor/slick/slick-theme.css" rel="stylesheet">
+  <!--- Date picker -->
+  <link href="../assets/vendor/bootstrap-datepicker-thai/css/datepicker.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <link href="../assets/css/theme.css" rel="stylesheet">
+</head>
+<body> <nav class="navbar navbar-header navbar-expand-md navbar-offcanvas">
+  <div class="container">
+    <div class="row nowrap navbar-head">
+      <div class="col-3 col-sm-4 navbar-left">
+        <button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="navbar-toggler">
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="widget-group d-none d-md-block">
+          <div class="widget widget-language">
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" id="selectLanguague" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="../assets/img/101-delivery/flag/en.png" alt="" class="img-flag">
+                <span class="text-label text-abbr">EN</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="selectLanguague">
+                <a class="dropdown-item" href="#">
+                  <img src="../assets/img/101-delivery/flag/th.png" alt="" class="img-flag">
+                  <span class="text-label text-abbr">TH</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-md-block">
+          <div class="select-to-delivery">
+            <span class="text-label text-uppercase">delivery to: </span>
+            <div class="dropdown">
+              <a href="#" class="select-place" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="place-name"> True Digital Park</span>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">True Digital Park 1</a>
+                <a class="dropdown-item" href="#">True Digital Park 2</a>
+                <a class="dropdown-item" href="#">True Digital Park 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 navbar-middle">
+        <a href="/html/home.html" class="navbar-brand">
+          <span class="image-wrap">
+            <img src="../assets/img/101-delivery/logo.svg" alt="" class="img-fluid">
+          </span>
+        </a>
+      </div>
+      <div class="col-3 col-sm-4 navbar-right">
+
+        <div class="widget-group">
+          <div class="widget widget-user">
+            <div class="dropdown">
+              <!--<a href="../html/login.html" class="widget-user-item">
+                                <img src="../assets/img/101-delivery/icons/user.svg" alt="" class="widget-image">
+                                <span class="text-label text-account">Account</span>
+                            </a> -->
+              <!--Change to dropdown when login-->
+
+              <a href="#" class="widget-user-item dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="../assets/img/101-delivery/icons/user.svg" alt="" class="widget-image">
+                <span class="text-label text-account">Account name</span>
+              </a>
+              <div class="dropdown-menu">
+                <button type="button" class="close" data-dismiss="dropdown"><i class="fal fa-times"></i></button>
+                <a class="dropdown-item profile" href="#">
+                  <div class="user-detail">
+                    <div class="user-image">
+                      <div class="image-wrap">
+                        <img src="../assets/img/101-delivery/avatar/avatar_female@2x.jpg" alt="" class="img img-fluid">
+                      </div>
+                      <button class="qrcode" data-toggle="modal" data-target="#modal-qrcode"><img src="../assets/img/101-delivery/avatar/qr_avatar.svg" alt="" class="img-fluid"></button>
+                    </div>
+                    <div class="user-name">Walunluk K.</div>
+                    <div class="user-point">
+                      <small>Point Balance</small>
+                      <div class="point"> <span class="point-balance">1,000</span> Pts.</div>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item" href="#">Account Settings</a>
+                <a class="dropdown-item" href="#">Delivery Address</a>
+                <a class="dropdown-item" href="#">Order Status</a>
+                <a class="dropdown-item" href="#">Order History</a>
+                <a class="dropdown-item" href="#">Voucher & Privilege</a>
+                <a class="dropdown-item" href="#">My Favorites</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item logout" href="#">Logout</a>
+              </div>
+            </div>
+          </div>
+          <div class="widget widget-cart">
+            <!-- <a href="#modal-cart" class="widget-cart-item" data-toggle="modal" data-target="#modal-cart" tabindex="-1">
+                            <img src="../assets/img/101-delivery/icons/cart.svg" alt="" class="widget-image">
+                            <span class="text-label text-order">order</span>
+                            <span class="text-label text-amount">3</span>
+                        </a> -->
+            <div class="dropdown">
+              <a href="#" class="widget-cart-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="../assets/img/101-delivery/icons/cart.svg" alt="" class="widget-image">
+                <span class="text-label text-order">order</span>
+                <span class="text-label text-amount">3</span>
+              </a>
+              <div class="dropdown-menu">
+                <div class="order-cart-empty d-none">
+<div class="order-empty">
+    <div class="image-wrap"><img src="../assets/img/101-delivery/checkout/emptycart.svg" alt="" class="img-responsive img-cart-empty"></div>
+    <h3 class="label text-medium text-gray">You haven’t placed any orders yet.</h3>
+    <div class="checkout-btn justify-content-center">
+        <a href="#" class="btn btn-style btn-primary btn-next text-uppercase">Find your meal</a>
+    </div>
+</div>                </div>
+                <div class="order-mini-cart">
+<div class="box">
+    <div class="box-header pb-0">
+        <div class="title text-uppercase text-primary text-medium">My Cart (3)</div>
+    </div>
+    <div class="box-body">
+        <div class="checkout-order checkout-order-summary">
+            <div class="order-list">
+                <div class="order-item">
+                        <div class="restaurant-name mb-1">
+                            Otoya restaurant
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="order-image">
+                                     <img src="https://via.placeholder.com/500x375" alt="" class="img-fluid">
+                                </div>              
+                            </div>
+                            <div class="col-8">
+                                <div class="order-detail">
+                                    <div class="order-name text-medium text-primary mb-1">Akauo Karaage with Pontsu Sauce</div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                                <div class="order-price-wrap">
+                                                    <div class="order-price text-medium text-left">฿ 419</div>
+                                                </div>
+                                        </div>
+                                        <div class="col-4">
+                                                <div class="order-amount justify-content-start">
+                                                        <span class="label label-qty text-gray mr-1">Qty</span> <span class="label label-amount text-gray font-italic">x1</span>
+                                                </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="d-flex"><button class="btn btn-cancle ml-auto" ><span class="icon-wrap text-danger"><img src="../assets/img/101-delivery/icons/trash.svg" alt=""></span></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="order-item">
+                    <div class="restaurant-name mb-1">
+                        Otoya restaurant
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="order-image">
+                                    <img src="https://via.placeholder.com/500x375" alt="" class="img-fluid">
+                            </div>              
+                        </div>
+                        <div class="col-8">
+                            <div class="order-detail">
+                                <div class="order-name text-medium text-primary mb-1">Akauo Karaage with Pontsu Sauce</div>
+                                <div class="row">
+                                    <div class="col-4">
+                                            <div class="order-price-wrap">
+                                                <div class="order-price text-medium text-left">฿ 419</div>
+                                            </div>
+                                    </div>
+                                    <div class="col-4">
+                                            <div class="order-amount justify-content-start">
+                                                    <span class="label label-qty text-gray mr-1">Qty</span> <span class="label label-amount text-gray font-italic">x1</span>
+                                            </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="d-flex"><button class="btn btn-cancle ml-auto" ><span class="icon-wrap text-danger"><img src="../assets/img/101-delivery/icons/trash.svg" alt=""></span></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-item">
+                    <div class="restaurant-name mb-1">
+                        Otoya restaurant
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="order-image">
+                                <img src="https://via.placeholder.com/500x375" alt="" class="img-fluid">
+                            </div>              
+                        </div>
+                        <div class="col-8">
+                            <div class="order-detail">
+                                <div class="order-name text-medium text-primary mb-1">Akauo Karaage with Pontsu Sauce</div>
+                                <div class="row">
+                                    <div class="col-4">
+                                            <div class="order-price-wrap">
+                                                <div class="order-price text-medium text-left">฿ 41955</div>
+                                            </div>
+                                    </div>
+                                    <div class="col-4">
+                                            <div class="order-amount justify-content-start">
+                                                    <span class="label label-qty text-gray mr-1">Qty</span> <span class="label label-amount text-gray font-italic">x1</span>
+                                            </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="d-flex"><button class="btn btn-cancle ml-auto" ><span class="icon-wrap text-danger"><img src="../assets/img/101-delivery/icons/trash.svg" alt=""></span></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-item">
+                        <div class="restaurant-name mb-1">
+                            Otoya restaurant
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="order-image">
+                                     <img src="https://via.placeholder.com/500x375" alt="" class="img-fluid">
+                                </div>              
+                            </div>
+                            <div class="col-8">
+                                <div class="order-detail">
+                                    <div class="order-name text-medium text-primary mb-1">Akauo Karaage with Pontsu Sauce</div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                                <div class="order-price-wrap">
+                                                    <div class="order-price text-medium text-left">฿ 419</div>
+                                                </div>
+                                        </div>
+                                        <div class="col-4">
+                                                <div class="order-amount justify-content-start">
+                                                        <span class="label label-qty text-gray mr-1">Qty</span> <span class="label label-amount text-gray font-italic">x1</span>
+                                                </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="d-flex"><button class="btn btn-cancle ml-auto" ><span class="icon-wrap text-danger"><img src="../assets/img/101-delivery/icons/trash.svg" alt=""></span></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="order-item">
+                    <div class="restaurant-name mb-1">
+                        Otoya restaurant
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="order-image">
+                                    <img src="https://via.placeholder.com/500x375" alt="" class="img-fluid">
+                            </div>              
+                        </div>
+                        <div class="col-8">
+                            <div class="order-detail">
+                                <div class="order-name text-medium text-primary mb-1">Akauo Karaage with Pontsu Sauce</div>
+                                <div class="row">
+                                    <div class="col-4">
+                                            <div class="order-price-wrap">
+                                                <div class="order-price text-medium text-left">฿ 419</div>
+                                            </div>
+                                    </div>
+                                    <div class="col-4">
+                                            <div class="order-amount justify-content-start">
+                                                    <span class="label label-qty text-gray mr-1">Qty</span> <span class="label label-amount text-gray font-italic">x1</span>
+                                            </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="d-flex"><button class="btn btn-cancle ml-auto" ><span class="icon-wrap text-danger"><img src="../assets/img/101-delivery/icons/trash.svg" alt=""></span></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-item">
+                    <div class="restaurant-name mb-1">
+                        Otoya restaurant
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="order-image">
+                                <img src="https://via.placeholder.com/500x375" alt="" class="img-fluid">
+                            </div>              
+                        </div>
+                        <div class="col-8">
+                            <div class="order-detail">
+                                <div class="order-name text-medium text-primary mb-1">Akauo Karaage with Pontsu Sauce</div>
+                                <div class="row">
+                                    <div class="col-4">
+                                            <div class="order-price-wrap">
+                                                <div class="order-price text-medium text-left">฿ 41955</div>
+                                            </div>
+                                    </div>
+                                    <div class="col-4">
+                                            <div class="order-amount justify-content-start">
+                                                    <span class="label label-qty text-gray mr-1">Qty</span> <span class="label label-amount text-gray font-italic">x1</span>
+                                            </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="d-flex"><button class="btn btn-cancle ml-auto" ><span class="icon-wrap text-danger"><img src="../assets/img/101-delivery/icons/trash.svg" alt=""></span></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-summary pb-0">                    
+                <div class="sub-total row-wrap">
+                    <div class="text-wrap">
+                        <p class="text-medium text-uppercase text-primary">Sub total</p>
+                    </div>
+                    <div class="text-wrap text-right">
+                        <p class="discount-price text-medium text-primary"> ฿ 1,257</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="box-footer">
+        <div class="row justify-content-between">
+                <div class="col-6">
+                    <div class="d-flex align-items-center h-100">
+                        <a href="#" class="btn btn-style btn-continue text-uppercase text-left text-hvr-primary d-flex align-items-center pl-0" data-dismiss="dropdown">
+                            <span class="icon-wrap mr-2"> 
+                                <i class="fas fa-long-arrow-left"></i>  
+                            </span>
+                            Continue ordering 
+                        </a> 
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex align-items-center h-100">
+                            <a href="#" class="btn btn-style btn-primary btn-next text-uppercase">Checkout</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>                </div>
+              </div>
+            </div>
+          </div>
+          <div class="widget widget-search widget-search-desktop d-none d-md-block">
+            <div class="dropdown">
+              <a href="#" class="widget-search-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="icon-wrap">
+                  <img src="../assets/img/101-delivery/icons/search.svg" alt="" class="widget-image">
+                </span>
+                <span class="text-label">Search</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="widgetSearch">
+                <div class="search-box">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for restaurants,dishes or cuisines">
+                    <div class="input-group-append">
+                      <button class="btn" type="submit">
+                        <img src="../assets/img/101-delivery/icons/search-blue.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--select delivery and search box on mobile--->
+<div class="d-block d-md-none mb-2">
+    <div class="select-to-delivery">
+        <span class="text-label text-uppercase">delivery to: </span>
+        <div class="dropdown">
+            <a href="#" class="select-place" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="place-name"> True Digital Park</span> 
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">True Digital Park 1</a>
+                <a class="dropdown-item" href="#">True Digital Park 2</a>
+                <a class="dropdown-item" href="#">True Digital Park 3</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="search-box-md mt-1 d-block d-md-none">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="dropdown">
+                <a class="icon-wrap" id="searchCategories"
+                    data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <img src="../assets/img/101-delivery/icons/square.svg"
+                        alt="">
+                </a>
+                <div class="dropdown-menu"
+                    aria-labelledby="searchCategories">
+                    <div class="text-title text-uppercase">Categories</div>
+                    <div class="item-group">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="item">
+                                    <a href="/" class="item-wrap">
+                                        <span class="icon-wrap">
+                                            <img src="../assets/img/101-delivery/icons-category/black-american.svg"
+                                                alt="" class="icon-image">
+                                        </span>
+                                        <span class="item-title">American</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item">
+                                    <a href="/" class="item-wrap">
+                                        <span class="icon-wrap">
+                                            <img src="../assets/img/101-delivery/icons-category/black-dessert.svg"
+                                                alt="" class="icon-image">
+                                        </span>
+                                        <span class="item-title">Desserts</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item">
+                                    <a href="/" class="item-wrap">
+                                        <span class="icon-wrap">
+                                            <img src="../assets/img/101-delivery/icons-category/black-asian.svg"
+                                                alt="" class="icon-image">
+                                        </span>
+                                        <span class="item-title">Asian</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item">
+                                    <a href="/" class="item-wrap">
+                                        <span class="icon-wrap">
+                                            <img src="../assets/img/101-delivery/icons-category/black-fastfood.svg"
+                                                alt="" class="icon-image">
+                                        </span>
+                                        <span class="item-title">Fast
+                                            Food</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item">
+                                    <a href="/" class="item-wrap">
+                                        <span class="icon-wrap">
+                                            <img src="../assets/img/101-delivery/icons-category/black-bakery.svg"
+                                                alt="" class="icon-image">
+                                        </span>
+                                        <span class="item-title">Bakery</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item">
+                                    <a href="/" class="item-wrap">
+                                        <span class="icon-wrap">
+                                            <img src="../assets/img/101-delivery/icons-category/black-healthy.svg"
+                                                alt="" class="icon-image">
+                                        </span>
+                                        <span class="item-title">Healthy</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item">
+                                    <a href="/" class="item-wrap">
+                                        <span class="icon-wrap">
+                                            <img src="../assets/img/101-delivery/icons-category/black-breakfast.svg"
+                                                alt="" class="icon-image">
+                                        </span>
+                                        <span class="item-title">Breakfast</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item">
+                                    <a href="/" class="item-wrap">
+                                        <span class="icon-wrap">
+                                            <img src="../assets/img/101-delivery/icons-category/black-japanese.svg"
+                                                alt="" class="icon-image">
+                                        </span>
+                                        <span class="item-title">Japanese</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item">
+                                    <a href="/" class="item-wrap">
+                                        <span class="icon-wrap">
+                                            <img src="../assets/img/101-delivery/icons-category/black-chineese.svg"
+                                                alt="" class="icon-image">
+                                        </span>
+                                        <span class="item-title">Chineese</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item">
+                                    <a href="/" class="item-wrap">
+                                        <span class="icon-wrap">
+                                            <img src="../assets/img/101-delivery/icons-category/black-korean.svg"
+                                                alt="" class="icon-image">
+                                        </span>
+                                        <span class="item-title">Korean</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item">
+                                    <a href="/" class="item-wrap">
+                                        <span class="icon-wrap">
+                                            <img src="../assets/img/101-delivery/icons-category/black-coffee.svg"
+                                                alt="" class="icon-image">
+                                        </span>
+                                        <span class="item-title">Coffee</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item">
+                                    <a href="/" class="item-wrap">
+                                        <span class="icon-wrap">
+                                            <img src="../assets/img/101-delivery/icons-category/black-more.svg"
+                                                alt="" class="icon-image">
+                                        </span>
+                                        <span class="item-title">More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="text" class="form-control" placeholder="Search for restaurants, dishes or cuisines">
+        <div class="input-group-append">
+            <button class="btn" type="submit"> 
+                <img src="../assets/img/101-delivery/icons/search-blue.svg" alt="">
+            </button>
+        </div>
+    </div>
+</div>  </div>
+
+  <div class="navbar-collapse offcanvas-collapse" id="navbarCollapse">
+    <div class="container">
+      <div class="d-flex justify-content-end">
+        <button class="navbar-toggler navbar-close d-block d-md-none" type="button" data-toggle="offcanvas" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fal fa-times"></i>
+        </button>
+      </div>
+      <div class="widget widget-language d-block d-md-none">
+        <div class="dropdown">
+          <a class="dropdown-toggle" href="#" role="button" id="selectLanguague" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="../assets/img/101-delivery/flag/en.png" alt="" class="img-flag">
+            <span class="text-abbr">EN</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="selectLanguague">
+            <a class="dropdown-item" href="#">
+              <img src="../assets/img/101-delivery/flag/th.png" alt="" class="img-flag">
+              <span class="text-abbr">TH</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/html/home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/categories.html">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/promotions.html">Promotions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/deal-privileges.html">Deals
+            & Privileges</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/restaurant.html">Restaurants</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/html/contact-us.html">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="section-header d-none d-md-block">
+    <img src="../assets/img/101-delivery/banners/categories-banner.jpg" alt=""
+        class="bg-image">
+    <div class="section-title">
+        All categories
+    </div>
+</section>
+
+<nav aria-label="breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Categories</li>
+        </ol>
+    </div>
+</nav>
+
+<main class="main-content">
+    <section class="section section-categories">
+        <div class="container">
+            <div class="main-title d-block d-md-none">
+                All categories 
+            </div>
+            <div class="row no-margin-bottom">
+                <div class="col-6 col-md-3">
+                    <a href="/" class="item-link">
+                        <div class="item border-rounded">
+                            <div class="item-image">
+                                <img src="../assets/img/101-delivery/all-categories/category-img-1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="item-content">
+                                <div class="item-title">
+                                Burgers
+                                </div>
+                                <div class="item-places">10 Places</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="/" class="item-link">
+                        <div class="item border-rounded">
+                            <div class="item-image">
+                                <img
+                                    src="../assets/img/101-delivery/all-categories/category-img-2.jpg"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="item-content">
+                                <div class="item-title">Desserts</div>
+                                <div class="item-places">10 Places</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                     <a href="/" class="item-link">
+                        <div class="item border-rounded">
+                            <div class="item-image">
+                                <img
+                                    src="../assets/img/101-delivery/all-categories/category-img-3.jpg"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="item-content">
+                                <div class="item-title">Asian</div>
+                                <div class="item-places">10 Places</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="item border-rounded">
+                        <div class="item-image">
+                            <img
+                                src="../assets/img/101-delivery/all-categories/category-img-4.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">Bakery</div>
+                            <div class="item-places">10 Places</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="item border-rounded">
+                        <div class="item-image">
+                            <img
+                                src="../assets/img/101-delivery/all-categories/category-img-1.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">Burgers</div>
+                            <div class="item-places">10 Places</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="item border-rounded">
+                        <div class="item-image">
+                            <img
+                                src="../assets/img/101-delivery/all-categories/category-img-2.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">Desserts</div>
+                            <div class="item-places">10 Places</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="item border-rounded">
+                        <div class="item-image">
+                            <img
+                                src="../assets/img/101-delivery/all-categories/category-img-3.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">Asian</div>
+                            <div class="item-places">10 Places</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="item border-rounded">
+                        <div class="item-image">
+                            <img
+                                src="https://via.placeholder.com/1920x1080"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-title">Asian</div>
+                            <div class="item-places">10 Places</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Back to top button -->
+<a id="backToTop">
+  <p class="m-0 text-top">TOP</p>
+</a>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="container">
+      <div class="footer-links">
+        <div class="item-group">
+          <a href="" class="item-link">Terms of Service</a>
+          <a href="" class="item-link">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>Copyright © 2019 MQDC (Magnolia Quality Development Corporation Limited)</p>
+      </div>
+    </div>
+  </div>
+</footer><!-- Bootstrap core JavaScript -->
+<script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="../assets/vendor/jquery/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/bootstrap-datepicker-thai/js/bootstrap-datepicker.js"></script>
+<script src="../assets/vendor/bootstrap-datepicker-thai/js/bootstrap-datepicker-thai.js"></script>
+<script src="../assets/vendor/bootstrap-datepicker-thai/js/locales//bootstrap-datepicker.th.js"></script>
+<script src="../assets/vendor/mixitup-3/dist/mixitup.min.js"></script>
+<script type="text/javascript" src="../assets/vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="../assets/js/theme.js"></script>
+</body>
+</html>

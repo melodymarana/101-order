@@ -1,0 +1,149 @@
+<!-- @include _head.kit -->
+<!-- @include "components/navbar-no-search.kit" -->
+<main class="main-content">
+  <section class="section section-checkout">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <ul class="checkout-step">
+            <li class="step step-mycart active">
+              <div class="step-wrap">
+                <div class="step-icon"><span class="icon icon-ico-basket"></span></div>
+                <div class="step-title">My cart</div>
+              </div>
+            </li>
+            <li class="step step-summary active">
+              <div class="step-wrap">
+                <div class="step-icon"><span class="icon icon-ico-summary"></span></div>
+                <div class="step-title">Summary</div>
+              </div>
+            </li>
+            <li class="step step-confirmation">
+              <div class="step-wrap">
+                <div class="step-icon"><span class="icon icon-ico-check"></span></div>
+                <div class="step-title">Confirmation</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="checkout-title mt-3 mb-3">
+        Summary
+      </div>
+      <div class="checkout-wrap">
+        <div class="row justify-content-between">
+          <div class="col-md-6 col-lg-5">
+            <div class="box">
+              <div class="box-header pb-0">
+                <div class="title">Order Items (3)</div>
+              </div>
+              <div class="box-body">
+                <!-- @include "components/checkout-order-summary.kit" -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <div class="checkout-info">
+              <div class="box">
+                <div class="box-header">
+                  <div class="title">Customer Info</div>
+                </div>
+                <div class="box-body">
+                  <div class="customer-info">
+                    <div class="customer-name">Walunluk K.</div>
+                    <div class="customer-email">example_mail@mail.com</div>
+                    <div class="customer-phone">099-123-4567</div>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="box-header">
+                  <div class="title">Delivery to</div>
+                  <div class="edit d-none"><a href="#">Edit</a></div>
+                </div>
+                <div class="box-body">
+                  <form class="form form-checkout-address">
+                    <div class="form-group">
+                      <label class="form-label text-uppercase text-default">Building/Tower</label>
+                      <!-- <div class="dropdown">
+                                                <a class="select-building form-control" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    True Digital Park
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <a class="dropdown-item" href="#">True Digital Park A</a>
+                                                    <a class="dropdown-item" href="#">True Digital Park B</a>
+                                                    <a class="dropdown-item" href="#">True Digital Park C</a>
+                                                </div>
+                                            </div>-->
+                      <select class="custom-select">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label text-uppercase text-default">Floor</label>
+                      <!--<div class="dropdown">
+                                                <a class="select-building form-control" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Floor 1
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <a class="dropdown-item" href="#"> Floor 1</a>
+                                                    <a class="dropdown-item" href="#"> Floor 2</a>
+                                                    <a class="dropdown-item" href="#"> Floor 3</a>
+                                                </div>
+                                            </div> -->
+                      <select class="custom-select">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label text-uppercase text-default">Note</label>
+                      <textarea class="form-control" rows="5" placeholder="Type your description here…."></textarea>
+                    </div>
+                  </form>
+                  <div class="checkout-btn justify-content-center p-3">
+                    <a href="#" class="btn btn-style btn-primary btn-checkout text-uppercase w-100">Checkout order</a>
+                  </div>
+                  <div class="d-none">
+                    <ul class="customer-address">
+                      <li class="item">
+                        <a href="#" class="item-address">
+                          <div class="address-wrap">
+                            <div class="address-name">
+                              True Digital Park
+                            </div>
+                            <div class="address-detail">
+                              <div class="address-1">
+                                Floor 10
+                              </div>
+                              <div class="address-2">
+                                101 Sukhumvit Road, Bangkok 10260
+                              </div>
+                            </div>
+                          </div>
+                          <div class="address-default">
+                            <span class="icon-check"><i class="far fa-check"></i></span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="add-new-address">
+                      <a href="#" class="btn btn-add-new"><span class="icon-wrap text-skyblue"><i class="far fa-plus"></i></span> new address</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- @include _main-footer.kit -->
+<!-- @include _footer.kit -->

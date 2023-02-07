@@ -1,0 +1,55 @@
+// Mixins
+// Background Cover Mixin
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+//Font
+@mixin body-font {
+  font-family: "Gotham Book", Helvetica, sans-serif;
+}
+
+@mixin font-style($font-name, $font-weight, $font-size) {
+  font-family: $font-name;
+  font-weight: $font-weight;
+  font-size: $font-size;
+}
+
+// Flexbox
+
+@mixin flex-box($flex-flow, $justify-content, $align-items, $flex) {
+  display: flex;
+  flex-flow: $flex-flow; //flex-direction, flex-wrap
+  flex: $flex; //flex-grow, flex-shrink, flex-basis
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin flex-style($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin text-hover($color-hover, $text-decoration) {
+  &:hover,
+  &:focus,
+  &.active {
+    color: $color-hover;
+    text-decoration: $text-decoration;
+  }
+}
+
+@mixin btn-outline ($border-color, $color) {
+  border-color: $border-color;
+  color: $color;
+  
+  &:hover,&:focus {
+    background-color: $border-color;
+    border-color: $border-color;
+    color: white;
+  }
+}

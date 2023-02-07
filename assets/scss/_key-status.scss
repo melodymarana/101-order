@@ -1,0 +1,50 @@
+//Order_status
+.paid_cancel {
+    background-color: #dc3545;
+}
+
+/*.refund_success {
+    background-color: #dc3545;
+}*/
+
+.refund_cancel {
+    background-color: #dc3545;
+}
+
+.paid_success {
+    background-color: #009688;
+}
+// รอการชำระเงิน
+.waiting_waiting {
+    background-color: #ff9800;
+}
+// ชำระเงินสำเร็จ
+.paid_waiting {
+    background-color: #2196F3;
+}
+
+.waiting_confirmed {
+    background-color: #009688;
+}
+// ยืนยันคำสั่งซื้อ
+.paid_confirmed {
+    background-color: #009688;
+}
+// กำลังจัดเตรียมสินค้า
+.paid_merchant_ordering {
+    background-color: #ffc107;
+}
+// กำลังจัดส่งสินค้า
+.paid_delivering {
+    background-color: #3f51b5;
+}
+
+.refund_success {
+    background-color: #009688;
+    border-color: #009688;
+}
+
+.refund_cancel {
+    background-color: #e64545;
+    border-color: #e64545;
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta content="telephone=no" name="format-detection">
+  <title>101 The Third Place</title>
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts -->
+  <link href="../assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="../assets/vendor/font/gotham/font.css" rel="stylesheet" />
+  <link href="../assets/vendor/font/DBhelvetica/font.css" rel="stylesheet" />
+  <link href="../assets/vendor/font/icomoon/style.css" rel="stylesheet" />
+  <!-- Slick -->
+  <link href="../assets/vendor/slick/slick.css" rel="stylesheet">
+  <link href="../assets/vendor/slick/slick-theme.css" rel="stylesheet">
+  <!--- Date picker -->
+  <link href="../assets/vendor/bootstrap-datepicker-thai/css/datepicker.css" rel="stylesheet">
+  <!-- Custom styles -->
+  <link href="../assets/css/theme.css" rel="stylesheet">
+</head>
+<body> 
+<nav class="navbar navbar-header navbar-expand-md">
+    <div class="container">
+        <div class="row nowrap navbar-head">
+            <div class="col-4 navbar-left">
+                <button class="navbar-toggler" type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+                <div class="widget-group d-none d-md-block">
+                    <div class="widget widget-language">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button"
+                                id="selectLanguague" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/img/101-delivery/flag/en.png"
+                                    alt="" class="img-flag">
+                                <span class="text-label text-abbr">EN</span>
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="selectLanguague">
+                                <a class="dropdown-item" href="#">
+                                    <img src="../assets/img/101-delivery/flag/th.png" alt="" class="img-flag">
+                                    <span class="text-label text-abbr">TH</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block">
+                    <div class="select-to-delivery">
+                        <span class="text-label text-uppercase">delivery to: </span>
+                        <div class="dropdown">
+                            <a class="select-place" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="place-name"> True Digital Park</span> 
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">True Digital Park 1</a>
+                                <a class="dropdown-item" href="#">True Digital Park 2</a>
+                                <a class="dropdown-item" href="#">True Digital Park 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-4 navbar-middle">
+                <a href="/html/home.html" class="navbar-brand">
+                    <span class="image-wrap">
+                        <img src="../assets/img/101-delivery/logo.svg" alt="" class="img-fluid">
+                    </span>
+                </a>
+            </div>
+            <div class="col-4 navbar-right">
+                <div class="widget-group">
+                    <div class="widget widget-user">
+                        <a href="../html/login.html" class="widget-user-item">
+                            <img src="../assets/img/101-delivery/icons/user.svg" alt="" class="widget-image">
+                            <span class="text-label text-account">Account</span>
+                        </a>
+                    </div>
+                    <div class="widget widget-cart">
+                        <a href="#" class="widget-cart-item">
+                            <img src="../assets/img/101-delivery/icons/cart.svg" alt="" class="widget-image">
+                            <span class="text-label text-order">order</span>
+                            <span class="text-label text-amount">3</span>
+                        </a>
+                    </div>
+                    <div class="widget widget-search widget-search-desktop d-none d-md-block">
+                        <div class="dropdown">
+                            <a href="#" class="widget-search-item" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="icon-wrap">
+                                    <img src="../assets/img/101-delivery/icons/search.svg" alt="" class="widget-image">
+                                </span>
+                                <span class="text-label">Search</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="widgetSearch">
+                                <div class="search-box">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search for restaurants,dishes or cuisines">
+                                        <div class="input-group-append">
+                                            <button class="btn" type="submit"> 
+                                                <img src="../assets/img/101-delivery/icons/search-blue.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <button class="navbar-toggler navbar-close d-block d-md-none"
+                    type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fal fa-times"></i>
+                </button>
+            </div>
+            <div class="widget widget-language d-block d-md-none">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button"
+                        id="selectLanguague" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="../assets/img/101-delivery/flag/en.png" alt=""
+                            class="img-flag">
+                        <span class="text-abbr">EN</span>
+                    </a>
+                    <div class="dropdown-menu"
+                        aria-labelledby="selectLanguague">
+                        <a class="dropdown-item" href="#">
+                            <img src="../assets/img/101-delivery/flag/th.png"
+                                alt="" class="img-flag">
+                            <span class="text-abbr">TH</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/html/home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/categories.html">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/deal-privileges.html">Deals
+                        & Privileges</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/restaurant.html">Restaurants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/contact-us.html">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+<main class="main-content">
+    <section class="section section-checkout">
+      <div class="container">
+          <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <ul class="checkout-step">            
+                        <li class="step step-mycart active">
+                            <div class="step-wrap">
+                                <div class="step-icon"><span class="icon icon-ico-basket"> </span></div>
+                                <div class="step-title">My cart</div>
+                            </div>                
+                        </li> 
+                        <li class="step step-summary active">                      
+                            <div class="step-wrap">
+                                <div class="step-icon"><span class="icon icon-ico-summary"></span></div>
+                                <div class="step-title">Summary</div>
+                            </div>
+                        </li>
+                        <li class="step step-confirmation">             
+                            <div class="step-wrap">
+                                <div class="step-icon"><span class="icon icon-ico-check"></span></div>
+                                <div class="step-title">Confirmation</div>
+                            </div>
+                        </li>
+                    </ul> 
+                </div>
+            </div>   
+            <div class="checkout-title mt-3 mb-3">
+                    Info & Payment
+            </div>
+            <div class="checkout-wrap">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-lg-5">
+                        <div class="checkout-info">
+                            <div class="box">
+                                <div class="box-header">
+                                    <div class="title">Customer Info</div>
+                                    <div class="edit"><a href="#">Edit</a></div>
+                                </div>
+                                <div class="box-body">
+                                    <div class="customer-info">
+                                        <div class="customer-name">Walunluk K.</div>
+                                        <div class="customer-email">example_mail@mail.com</div>
+                                        <div class="customer-phone">099-123-4567</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-header">
+                                    <div class="title">Delivery to</div>
+                                    <div class="edit"><a href="#">Edit</a></div>
+                                </div>
+                                <div class="box-body">
+                                    <ul class="customer-address">
+                                        <li class="item">
+                                            <a href="#" class="item-address">
+                                                <div class="address-wrap">
+                                                    <div class="address-name">
+                                                        True Digital Park
+                                                    </div>
+                                                    <div class="address-detail">
+                                                        <div class="address-1">
+                                                            Floor 10
+                                                        </div>
+                                                        <div class="address-2">
+                                                            101 Sukhumvit Road, Bangkok 10260
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="address-default">
+                                                    <span class="icon-check"><i class="far fa-check"></i></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="add-new-address">
+                                        <a href="#" class="btn btn-add-new"><span class="icon-wrap text-skyblue"><i class="far fa-plus"></i></span> new address</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <div class="checkout-payment">
+                            <div class="box">
+                                <div class="box-header">
+                                    <div class="title">
+                                        Payment Method
+                                        <div class="payment-logo">
+                                            <img src="../assets/img/101-delivery/payment-logo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="edit"><a href="#">Edit</a></div>
+                                </div>
+                                <div class="box-body">
+                                    <ul class="payment-cards">
+                                        <li class="item active">
+                                            <a href="#" class="card-item">
+                                                <span class="card-image"><img src="../assets/img/101-delivery/checkout/visa-logo.png" alt=""></span>
+                                                <span class="card-number">**** **** **** 0314</span>
+                                                <span class="icon-check"><i class="far fa-check"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" class="card-item">
+                                                <span class="card-image"><img src="../assets/img/101-delivery/checkout/mastercard-logo.png" alt=""></span>
+                                                <span class="card-number">**** **** **** 0314</span>
+                                                <span class="icon-check"><i class="far fa-check"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="add-new-card">
+                                        <a href="#" class="btn btn-add-new"><span class="icon-wrap text-skyblue"><i class="far fa-plus"></i></span> new address</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-btn justify-content-center mt-3 mb-3">
+                <a href="#" class="btn btn-style btn-primary btn-next text-uppercase">Next</a>
+            </div>
+      </div>
+    </section>
+</main>
+
+<!-- Back to top button -->
+<a id="backToTop">
+  <p class="m-0 text-top">TOP</p>
+</a>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="container">
+      <div class="footer-links">
+        <div class="item-group">
+          <a href="" class="item-link">Terms of Service</a>
+          <a href="" class="item-link">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>Copyright © 2019 MQDC (Magnolia Quality Development Corporation Limited)</p>
+      </div>
+    </div>
+  </div>
+</footer><!-- Bootstrap core JavaScript -->
+<script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="../assets/vendor/jquery/popper.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/bootstrap-datepicker-thai/js/bootstrap-datepicker.js"></script>
+<script src="../assets/vendor/bootstrap-datepicker-thai/js/bootstrap-datepicker-thai.js"></script>
+<script src="../assets/vendor/bootstrap-datepicker-thai/js/locales//bootstrap-datepicker.th.js"></script>
+<script src="../assets/vendor/mixitup-3/dist/mixitup.min.js"></script>
+<script type="text/javascript" src="../assets/vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="../assets/js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<div class="content-wrap">
+  <div class="title">Delivery Address</div>
+  <!--<div class="my-address-wrap">
+    <ul class="my-address list-unstyled">
+      <li class="item active">
+        <a href="#" class="item-address">
+          <div class="address-wrap">
+            <div class="address-name">
+              True Digital Park
+            </div>
+            <div class="address-detail">
+              <div class="address-1">
+                Floor 10
+              </div>
+              <div class="address-2">
+                101 Sukhumvit Road, Bangkok 10260
+              </div>
+            </div>
+          </div>
+          <div class="address-action">
+            <button class="btn text-gray"> <i class="far fa-pen"></i> </button>
+            <button class="btn text-danger"> <i class="far fa-trash-alt"></i> </button>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a href="#" class="item-address">
+          <div class="address-wrap">
+            <div class="address-name">
+              True Digital Park
+            </div>
+            <div class="address-detail">
+              <div class="address-1">
+                Floor 10
+              </div>
+              <div class="address-2">
+                101 Sukhumvit Road, Bangkok 10260
+              </div>
+            </div>
+          </div>
+          <div class="address-action">
+            <button type="button" class="btn text-gray"> <i class="far fa-pen"></i> </button>
+            <button class="btn text-danger" data-toggle="tooltip" data-placement="bottom" title="delete"> <i class="far fa-trash-alt"></i> </button>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="add-new-address">
+      <a href="#" class="btn btn-add-new"><span class="icon-wrap text-skyblue"><i class="far fa-plus"></i></span> new address</a>
+    </div>
+  </div>-->
+  <div class="user-address">
+    <div class="tower">True Digital Park</div>
+    <div class="floor">Floor 10, Phoenix</div>
+    <div class="detail">
+      101 Sukhumvit Road,<br>
+      Bangkok 10260
+    </div>
+    <button class="btn btn-edit mt-3">Edit Details</button>
+  </div>
+  <!-- Add/Edit  address-->
+  <form class="form form-settings form-address">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="building" class="form-label text-uppercase text-required">Building/Tower</label>
+        <select class="custom-select form-control">
+          <option>True Digital Park</option>
+          <option>Tower 1</option>
+          <option>Tower 2</option>
+          <option>Tower 3</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="floor" class="form-label text-uppercase text-required">Floor</label>
+        <select class="custom-select form-control">
+          <option>10</option>
+          <option>Tower 1</option>
+          <option>Tower 2</option>
+          <option>Tower 3</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-12">
+        <label for="address-detail" class="form-label text-uppercase">Optional Detail</label>
+        <textarea class="form-control" rows="5" placeholder="Type your address here…."></textarea>
+      </div>
+      <div class="form-check col-12">
+        <input type="checkbox" class="form-check-input" id="set-primary-address">
+        <label class="form-check-label" for="set-primary-address">Set as primary address</label>
+      </div>
+    </div>
+    <div class="action-button d-flex justify-content-between">
+      <button class="btn btn-style btn-primary">Save</button>
+      <button class="btn btn-style btn-outline-default mr-3">Cancle</button>
+    </div>
+  </form>
+</div>

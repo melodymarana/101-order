@@ -1,0 +1,146 @@
+.sidebar {
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+
+  &-wrap {
+    @media (min-width: 992px) {
+      max-width: 240px;
+      width: 240px;
+    }
+
+    @media (min-width: 768px) {
+      margin-right: 2rem;
+    }
+  }
+
+  .title {
+    color: $primary;
+    font-size: $font-lg;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+
+  .list-group {
+    padding-left: 1rem;
+
+    &-item {
+      font-size: $font-sm;
+      padding-left: 0;
+      background-color: transparent !important;
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      color: $light-content;
+      text-transform: uppercase;
+      position: relative;
+
+      @extend %transition;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $form-border !important;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+        border-radius: 0;
+      }
+
+      &::before {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 25px;
+        height: 3px;
+        background-color: $secondary;
+        opacity: 0;
+      }
+
+      &:hover,
+      &:focus,
+      &.active {
+        color: $primary;
+      }
+
+      @media (max-width: 767px) {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .dropdown {
+    position: relative;
+
+    .btn {
+      @include flex-box(row, space-between, center, 1);
+
+      border: 1px solid $form-border;
+      border-radius: 0;
+      box-shadow: none;
+      color: $primary;
+      font-size: $font-sm;
+      padding: 0.75rem 1rem;
+      text-transform: uppercase;
+      width: 100%;
+    }
+
+    &-menu {
+      border: 0;
+      border-radius: 0;
+      padding: 0;
+      width: 100%;
+      will-change: unset !important;
+      transform: unset !important;
+      box-shadow: 0 3px 6px 0 rgba(black, 0.15);
+      z-index: 9;
+
+      @media (max-width: 767px) {
+        top: 50px !important;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .btn {
+        display: none;
+      }
+
+      .dropdown-menu {
+        position: relative !important;
+        display: block !important;
+        transform: none !important;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.content-side {
+  flex: 1;
+
+  .content-wrap {
+    >.title {
+      color: $primary;
+      font-size: $font-md;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+  
+      &::after {
+        content: ' ';
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: $secondary;
+        position: relative;
+        top: 3px;
+      }
+  
+      @media (min-width: 768px) {
+        font-size: $font-lg;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+<svg id="Group_10746" data-name="Group 10746" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #ea4334;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-5 {
+        fill: #4184f3;
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-7 {
+        fill: #fabb04;
+      }
+
+      .cls-8 {
+        clip-path: url(#clip-path-4);
+      }
+
+      .cls-9 {
+        fill: #34a753;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Path_9090" data-name="Path 9090" class="cls-1" d="M31.2-27.262a10.232,10.232,0,0,1,7.138,2.749L43.55-29.6A17.737,17.737,0,0,0,31.2-34.4,18.448,18.448,0,0,0,14.709-24.226l5.969,4.636A11.159,11.159,0,0,1,31.2-27.262Z" transform="translate(-14.709 34.4)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_9092" data-name="Path 9092" class="cls-1" d="M41.723-22.121a15.807,15.807,0,0,0-.39-3.774H24v6.851H34.174a9.023,9.023,0,0,1-3.774,5.99l5.826,4.513A18.05,18.05,0,0,0,41.723-22.121Z" transform="translate(-24 25.895)"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Path_9094" data-name="Path 9094" class="cls-1" d="M21.559-16.73a11.363,11.363,0,0,1-.615-3.651,11.943,11.943,0,0,1,.595-3.651l-5.969-4.636A18.479,18.479,0,0,0,13.6-20.381a18.479,18.479,0,0,0,1.969,8.287Z" transform="translate(-13.6 28.668)"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Path_9096" data-name="Path 9096" class="cls-1" d="M31.192-7.133A17.6,17.6,0,0,0,43.418-11.6l-5.826-4.513a10.927,10.927,0,0,1-6.4,1.846,11.114,11.114,0,0,1-10.5-7.672l-5.969,4.636A18.416,18.416,0,0,0,31.192-7.133Z" transform="translate(-14.721 21.943)"/>
+    </clipPath>
+  </defs>
+  <circle id="Ellipse_446" data-name="Ellipse 446" class="cls-1" cx="35" cy="35" r="35"/>
+  <g id="Group_9076" data-name="Group 9076" transform="translate(16.333 16.333)">
+    <g id="Group_9072" data-name="Group 9072" class="cls-2" transform="translate(1.969)">
+      <path id="Path_9089" data-name="Path 9089" class="cls-3" d="M9.709-39.4H56.3V-6.839H9.709Z" transform="translate(-18.585 30.524)"/>
+    </g>
+    <g id="Group_9073" data-name="Group 9073" class="cls-4" transform="translate(18.461 15.097)">
+      <path id="Path_9091" data-name="Path 9091" class="cls-5" d="M19-30.9H54.474v35.1H19Z" transform="translate(-27.876 22.02)"/>
+    </g>
+    <g id="Group_9074" data-name="Group 9074" class="cls-6" transform="translate(0 10.174)">
+      <path id="Path_9093" data-name="Path 9093" class="cls-7" d="M8.6-33.668H34.31V.656H8.6Z" transform="translate(-17.476 24.793)"/>
+    </g>
+    <g id="Group_9075" data-name="Group 9075" class="cls-8" transform="translate(1.99 22.112)">
+      <path id="Path_9095" data-name="Path 9095" class="cls-9" d="M9.721-26.943H56.169V5.618H9.721Z" transform="translate(-18.596 18.068)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,130 @@
+<div class="content-wrap">
+  <div class="title">Customer Details</div>
+  <div class="user-profile-wrap">
+    <div class="user-profile mb-3">
+      <div class="user-image">
+        <div class="image-wrap">
+          <span class="browse-file">
+            <input type="file" onchange="readURL(this);" class="browse-avatar" accept="image/*">
+          </span>
+          <img id="image-preview" src="../assets/img/101-delivery/avatar/avatar_male.svg" alt="" class="img img-fluid">
+          <span class="btn btn-change-image">Edit</span>
+        </div>
+      </div>
+      <div class="user-info">
+        <div class="points-details">
+          <div class="current-points">
+            <div class="label">Current Points <a href="#modal-points-info" class="info text-primary" data-toggle="modal" data-target="#modal-points-info"><i class="far fa-info-circle"></i></a></div>
+            <div class="points">1,000</div>
+          </div>
+          <div class="my-vouchers">
+            <div class="label">My Vouchers</div>
+            <div class="vouchers">7</div>
+          </div>
+        </div>
+        <button class="btn btn-primary text-uppercase rounded-pill" data-toggle="modal" data-target="#modal-qrcode">my qr code</button>
+      </div>
+    </div>
+    <div class="user-detail">
+      <div class="name">Ms. Walunluk K.</div>
+      <div class="email">Walunluk.k@mail.com</div>
+      <div class="phone-number">099-123-4567</div>
+      <div class="birth-date">29/10/1988</div>
+      <button class="btn btn-edit mt-3">Edit Details</button>
+    </div>
+    <form class="form form-settings form-profile">
+      <div class="form-row gender">
+        <div class="form-group col-md-6">
+          <div class="row">
+            <div class="custom-control custom-radio col">
+              <input type="radio" id="male" name="gender" class="custom-control-input" checked="">
+              <label class="custom-control-label" for="male">
+                <span class="label">ชาย</span>
+              </label>
+            </div>
+            <div class="custom-control custom-radio col">
+              <input type="radio" id="female" name="gender" class="custom-control-input">
+              <label class="custom-control-label" for="female">
+                <span class="label">หญิง</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="name" class="form-label text-uppercase text-required">Full name</label>
+          <input type="text" class="form-control form-control-sm" placeholder="First/Last Name" value="Asashi Takeshi">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="email" class="form-label text-uppercase text-required">email address</label>
+          <input type="email" class="form-control form-control-sm" placeholder="email@example.com" value="asashi.tajeshi@example.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="date-of-birth" class="form-label text-uppercase text-required">Date Of Birth</label>
+          <input type="" class="form-control form-control-sm datepicker-custom" placeholder="mm/dd/yy" data-date-format="mm-dd-yy" data-provide="datepicker" data-date-language="th-th">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="phone-number" class="form-label text-uppercase text-required">Mobile No.</label>
+          <input type="text" class="form-control form-control-sm" placeholder="phone number" value="099-123-4567">
+        </div>
+      </div>
+      <div class="form-row action-button">
+        <div class="form-group col-md-6">
+          <button class="btn btn-style btn-primary btn-save text-uppercase rounded-pill">Save change</button>
+        </div>
+        <div class="form-group col-md-6">
+          <button class="btn btn-style btn-outline-default btn-cancle text-uppercase rounded-pill">Cancle</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="my-password mt-5">
+    <div class="title">My Password</div>
+    <input type="password" class="form-control form-control-sm default-password" placeholder="Your password" value="password" required>
+    <button class="btn btn-edit">Change</button>
+    <form class="form form-change-password">
+      <div class="form-row">
+        <div class="form-group form-password col-md-6">
+          <label for="pwd" class="form-label text-uppercase text-required">Old Password</label>
+          <div class="input-group">
+            <span toggle="#old-password" class="toggle-password toggle-opacity"><img src="../assets/img/101-delivery/icons/pwd-show.svg" alt="" class="img-fluid"></span>
+            <input type="password" class="form-control form-control-sm" id="old-password" placeholder="Your password" value="password" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group form-password col-md-6">
+          <label for="pwd" class="form-label text-uppercase text-required">password</label>
+          <div class="input-group">
+            <span toggle="#type-password" class="toggle-password toggle-opacity"><img src="../assets/img/101-delivery/icons/pwd-show.svg" alt="" class="img-fluid"></span>
+            <input type="password" class="form-control form-control-sm" id="type-password" placeholder="Your password" value="password" required>
+          </div>
+        </div>
+        <div class="form-group form-password col-md-6">
+          <label for="pwd" class="form-label text-uppercase text-required">confirm password</label>
+          <div class="input-group">
+            <span toggle="#retype-password" class="toggle-password toggle-opacity"><img src="../assets/img/101-delivery/icons/pwd-hide.svg" alt="" class="img-fluid"></span>
+            <input type="password" class="form-control form-control-sm" id="retype-password" placeholder="Re-type your password" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-row action-button">
+        <div class="form-group col-md-6">
+          <button class="btn btn-style btn-primary btn-save text-uppercase rounded-pill">Save change</button>
+        </div>
+        <div class="form-group col-md-6">
+          <button class="btn btn-style btn-outline-default btn-cancle text-uppercase rounded-pill">Cancle</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+   $(document).ready(function () {
+    $('.datepicker-custom').datepicker();
+   });
+</script>

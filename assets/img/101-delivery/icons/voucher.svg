@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.463" height="24.142" viewBox="0 0 35.463 24.142">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="Group_9069" data-name="Group 9069" transform="translate(0.75 0.75)">
+    <g id="Component_19_1" data-name="Component 19 – 1">
+      <g id="Group_9065" data-name="Group 9065">
+        <path id="Path_9083" data-name="Path 9083" class="cls-1" d="M33.963,15.849v4.528A2.264,2.264,0,0,1,31.7,22.642H2.264A2.264,2.264,0,0,1,0,20.378V15.849a4.528,4.528,0,0,0,4.528-4.528A4.528,4.528,0,0,0,0,6.793V2.264A2.264,2.264,0,0,1,2.264,0H31.7a2.264,2.264,0,0,1,2.264,2.264V6.793a4.528,4.528,0,0,0,0,9.057Z"/>
+      </g>
+      <g id="Group_9066" data-name="Group 9066" transform="translate(9.057 4.528)">
+        <path id="Path_9084" data-name="Path 9084" class="cls-1" d="M2.264,4.528A2.264,2.264,0,1,0,0,2.264,2.264,2.264,0,0,0,2.264,4.528Z"/>
+      </g>
+      <g id="Group_9067" data-name="Group 9067" transform="translate(21.51 13.585)">
+        <path id="Path_9085" data-name="Path 9085" class="cls-1" d="M2.264,4.528A2.264,2.264,0,1,0,0,2.264,2.264,2.264,0,0,0,2.264,4.528Z"/>
+      </g>
+      <g id="Group_9068" data-name="Group 9068" transform="translate(11.321 5.66)">
+        <path id="Path_9086" data-name="Path 9086" class="cls-1" d="M11.321,0,0,11.321"/>
+      </g>
+    </g>
+  </g>
+</svg>
